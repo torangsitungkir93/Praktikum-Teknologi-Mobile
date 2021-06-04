@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_data"
+    android:padding="15dp"
+    android:background="#97DFFF">
+
+    <TextView
+        android:id="@+id/jdl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="25dp"
+        android:text="Data Peminjaman Buku"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_nama_sekolah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jdl2"
+        android:gravity="bottom"
+        android:text="Nama Peminjam :"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="5dp"/>
+    <TextView
+        android:id="@+id/tv_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:text="Judul Buku :"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/et_nama_sekolah"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_jml_siswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:text="Kode Buku :"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/et_alamat_sekolah"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_jml_guru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:text="Masa Pinjam : "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/et_jml_siswa"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/et_nama_sekolah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nama_sekolah"
+        android:textSize="18sp"
+        android:hint="Masukkan nama peminjam"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/et_alamat_sekolah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_alamat"
+        android:textSize="18sp"
+        android:hint="Masukkan judul buku"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/et_jml_siswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_jml_siswa"
+        android:textSize="18sp"
+        android:hint="Masukkan kode buku"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/et_jml_guru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_jml_guru"
+        android:textSize="18sp"
+        android:hint="Masukkan masa pinjam (hari)"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/btn_submit"
+
+        android:layout_gravity="bottom|end"
+        android:textColor="@android:color/white"
+        android:theme="@style/MaterialTheme"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:icon="@drawable/ic_edit"
+        app:cornerRadius="10dp"
+        app:iconTint="@android:color/white"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDIT"
+        android:layout_below="@id/et_jml_guru"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

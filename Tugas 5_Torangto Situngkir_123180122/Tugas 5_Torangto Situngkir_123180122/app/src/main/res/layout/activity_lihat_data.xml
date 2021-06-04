@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#97DFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Peminjam :"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_marginLeft="14dp"
+            android:id="@+id/tv_item_nama_sekolah"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukkan nama peminjam"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Judul Buku :"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_marginLeft="14dp"
+            android:id="@+id/tv_item_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukkan judul buku"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kode Buku :"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_marginLeft="14dp"
+            android:id="@+id/tv_item_jml_siswa"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukkan kode buku"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masa Pinjam : "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_marginLeft="14dp"
+            android:id="@+id/tv_item_jml_guru"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukkan masa pinjam (hari)"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_marginLeft="14dp"
+            android:id="@+id/tv_item_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:padding="5dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_hapus"
+
+                android:layout_width="98dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:text="Hapus"
+
+                android:textColor="@android:color/white"
+                android:theme="@style/MaterialTheme"
+                app:backgroundTint="@color/colorAccent"
+                android:background="@drawable/rounded"
+                android:layout_marginBottom="10dp"
+                app:iconTint="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_edit"
+
+                android:layout_width="108dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/btn_hapus"
+
+                android:text="Edit"
+                android:textColor="@android:color/white"
+                android:theme="@style/MaterialTheme"
+                app:backgroundTint="@color/colorPrimaryDark"
+                android:background="@drawable/rounded2"
+                android:layout_marginBottom="10dp"
+                app:iconTint="@android:color/white"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

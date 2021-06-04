@@ -12,16 +12,17 @@
         android:id="@+id/frame_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/bottom_nav"/>
-
+        android:layout_above="@id/bottom_nav"
+        android:layout_marginBottom="131dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
-        android:background="@drawable/white_half_corner"
+        android:layout_width="wrap_content"
+        android:layout_height="302dp"
         android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        app:menu="@menu/menu_bawah"
-        app:itemIconSize="28dp" />
+        android:layout_marginBottom="177dp"
+        android:background="@drawable/white_half_corner"
+        app:itemIconSize="28dp"
+        app:menu="@menu/menu_bawah" />
 
 </RelativeLayout>
