@@ -17,10 +17,10 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
-        android:layout_width="wrap_content"
-        android:layout_height="302dp"
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="177dp"
+        android:layout_marginBottom="-62dp"
         android:background="@drawable/white_half_corner"
         app:itemIconSize="28dp"
         app:menu="@menu/menu_bawah" />
